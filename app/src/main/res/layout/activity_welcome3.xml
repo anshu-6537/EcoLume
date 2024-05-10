@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome3">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome1"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gradient"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Road Maintenance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="65dp"
+        android:maxLines="2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="480dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/semibold"
+        />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Help in Road maintenance encompasses preserving and repairing infrastructure like roads and bridges, ensuring safety"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        android:layout_marginTop="11dp"
+        android:maxLines="4"
+        android:fontFamily="@font/medium"
+        android:textSize="14sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="24dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grey_rect"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grey_rect"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/golden_rect"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:fontFamily="@font/medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="210dp"
+        android:background="@drawable/yellowbutton"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_rotated"
+    tools:context=".aboutActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_yellow"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="68dp"
+        />
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_and_conditions"
+        android:fontFamily="@font/semibold"
+        android:textSize="20sp"
+        android:textColor="#C8A45D"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#181E3C"
+        android:layout_marginHorizontal="130dp"
+        app:layout_constraintLeft_toLeftOf="@id/heading"
+        app:layout_constraintRight_toRightOf="@id/heading"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="8dp"
+        android:textSize="14sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

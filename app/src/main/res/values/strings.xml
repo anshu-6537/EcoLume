@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EcoLume</string>
+    <string name="these_systems_can_lead_to_lower_operating_costs_for_municipalities_and_governments">These systems can lead to lower operating costs for municipalities and governments.</string>
+    <string name="automated_street_light">Automated Street Light</string>
+    <string name="get_started">Get Started</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="profile">Profile</string>
+    <string name="privacy_policy">Your privacy is important to us. It is Brainstorming\'s policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate. We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used. We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification. We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</string>
+    <string name="terms">1.Use of the App: Use the app responsibly and lawfully for personal, non-commercial purposes. \n2.Intellectual Property: Respect copyrights and trademarks; don\'t modify or distribute app content without permission. \n3.User Content: You grant us permission to use any content you submit through the app. \n4.Privacy Policy: Your use of the app is subject to our Privacy Policy. \n5.Disclaimer of Warranties: The app is provided as is, without any warranties. \n6.Limitation of Liability: We\'re not liable for any damages arising from your use of the app. \n7.Governing Law: These terms are governed by the laws of [Your Jurisdiction]. \n8.Changes to Terms: We may update these terms; continued use of the app implies acceptance. \n9.Contact Us: If you have questions, reach out to us at [admin@ecolume.com].</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+</resources>
