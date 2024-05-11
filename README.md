@@ -43,4 +43,17 @@ Once installed, launch the EcoLume app and grant necessary permissions for locat
 
 We welcome your feedback and suggestions for improving EcoLume. If you encounter any issues or have ideas for new features, please don't hesitate to contact our support team at [pandeyanshumanofficial@gmail.com](mailto:pandeyanshumanofficial@gmail.com).
 
-Thank you for supporting our mission to create safer, smarter, and more sustainable communities with EcoLume!
+Thank you for supporting our mission to create safer, smarter, and more sustainable communities with EcoLume!!!
+
+![Splash   Onboarding](https://github.com/anshu-6537/EcoLume/assets/98105620/2d6063b1-6450-41d2-b04b-77b3fe18ed14)
+![Splash   Onboarding2](https://github.com/anshu-6537/EcoLume/assets/98105620/330917a8-f1c8-4dbe-a9be-177f4222f022)
+![Splash   Onboarding3](https://github.com/anshu-6537/EcoLume/assets/98105620/e978421d-70c0-4ece-8502-abcd8920e8d8)
+![Splash   Onboarding4](https://github.com/anshu-6537/EcoLume/assets/98105620/f7476b1c-6cde-418e-b5af-84a8cafea6f4)
+![Control panel (2)](https://github.com/anshu-6537/EcoLume/assets/98105620/71224d31-36f8-4725-9550-2e03a1719776)
+![Electric use](https://github.com/anshu-6537/EcoLume/assets/98105620/7691a09f-abc0-42be-aba3-d4a3a2ea7fda)
+![Ecosystem](https://github.com/anshu-6537/EcoLume/assets/98105620/550f155e-e68f-4a90-96a2-078f3f467541)
+![road and street](https://github.com/anshu-6537/EcoLume/assets/98105620/8ab87df4-8559-4895-98bc-03e457bde181)
+![traffic2](https://github.com/anshu-6537/EcoLume/assets/98105620/40766d6d-0ed4-41fa-bf2c-046b29b8c61a)
+![privacy](https://github.com/anshu-6537/EcoLume/assets/98105620/338d23a3-950d-4503-9ef9-8a692539d751)
+![T C](https://github.com/anshu-6537/EcoLume/assets/98105620/bd6ae191-5d3d-4c5d-8732-cade6c2e20d9)
+
