@@ -10,7 +10,9 @@ class SignIn : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-        val login:Button=findViewById(R.id.button)
-        startActivity(Intent(this,HomePage::class.java))
+        val logi: Button = findViewById(R.id.login)
+        logi.setOnClickListener {
+            startActivity(Intent(this, Profile::class.java))
+        }
     }
 }
