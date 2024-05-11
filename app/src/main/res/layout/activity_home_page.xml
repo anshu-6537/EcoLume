@@ -1,9 +1,487 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".HomePage">
 
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:id="@+id/ecolume"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card"
+                android:background="@color/white"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardbackground"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card"
+                android:layout_marginTop="100dp"
+                tools:ignore="MissingConstraints"
+                android:elevation="9dp">
+
+                <GridLayout
+                    android:id="@+id/grid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_rowWeight="0"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_columnWeight="2"
+                        android:layout_margin="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bo1"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/power"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today"
+                                android:id="@+id/today"
+                                android:layout_marginEnd="80dp"
+                                app:layout_constraintStart_toEndOf="@id/bo1">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="93 Kwh"
+                                android:id="@+id/kwh"
+                                android:textStyle="bold"
+                                app:layout_constraintTop_toBottomOf="@id/today"
+                                app:layout_constraintStart_toEndOf="@+id/bo1"
+                                >
+
+                            </TextView>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_rowWeight="0"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bo2"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/powerplug"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This month"
+                                android:id="@+id/thismonth"
+                                android:layout_marginEnd="80dp"
+                                app:layout_constraintStart_toEndOf="@id/bo2"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="930,773 Kwh"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="80dp"
+                                app:layout_constraintTop_toBottomOf="@id/thismonth"
+                                app:layout_constraintStart_toEndOf="@+id/bo2"
+                                app:layout_constraintEnd_toEndOf="parent">
+
+                            </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bo3"
+                                android:layout_width="10dp"
+                                android:layout_height="8dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/ellipse"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100 lights active"
+                                android:id="@+id/light"
+                                android:layout_marginEnd="80dp"
+                                app:layout_constraintStart_toEndOf="@id/bo3"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="10dp"
+                                >
+
+                            </TextView>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_rowWeight="0"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bo4"
+                                android:layout_width="12dp"
+                                android:layout_height="7dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/ellipse1"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3 lights deactive"
+                                android:id="@+id/light2"
+                                android:layout_marginEnd="80dp"
+                                app:layout_constraintStart_toEndOf="@id/bo4"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="10dp"
+                                >
+
+                            </TextView>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/user"
+                android:background="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Profile"
+                app:layout_constraintLeft_toRightOf="@id/profile"
+                app:layout_constraintTop_toTopOf="@id/profile"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/semibold"
+                android:textColor="#C8A45D"
+                android:layout_marginStart="15sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#777373"
+                android:id="@+id/line"
+                app:layout_constraintTop_toBottomOf="@id/profile"
+                app:layout_constraintBottom_toTopOf="@id/grid"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            </View>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/grid"
+                android:layout_marginTop="20dp"
+                android:columnCount="2"
+                android:rowCount="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardstreet"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/box1image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/streetview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roads/streets \n Status"
+                        android:textStyle="bold"
+                        android:textColor="#E4D550"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="60dp"
+
+                        android:textSize="18sp">
+
+                    </TextView>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_height="0dp"
+                    android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/box2image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/streetbg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Electricity\n Usage"
+                        android:textStyle="bold"
+                        android:textColor="#E4D550"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="60dp"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:id="@+id/card3"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp">
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/treeview"
+                        android:id="@+id/box3image"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ecosystem \n Status"
+                        android:textStyle="bold"
+                        android:textColor="#E4D550"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="60dp"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_height="0dp"
+                    android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_columnWeight="1"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_margin="10dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/trafficlight2"
+                        android:id="@+id/box4image"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Traffic \n Status"
+                        android:textStyle="bold"
+                        android:textColor="#E4D550"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="60dp"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@ class SignIn : AppCompatActivity() {
 
         val logi: Button = findViewById(R.id.login)
         logi.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
+            startActivity(Intent(this, HomePage::class.java))
         }
     }
 }
